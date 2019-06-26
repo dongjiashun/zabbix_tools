@@ -63,8 +63,18 @@
 		
 		"6.自定义zabbix监听api设定，不局限于本公司" ) ;
 		
-帮助说明执行以下命令
+### 使用说明
+因为该项目是java写的，大家要使用需要 安装java环境
 
+### 直接使用
+如果直接使用不看源码就直接用jar包即可，但是需要java环境
+
+### 源码查看使用
+环境java1.8
+maven插件：需要mvn install 打包
+
+###辅助命令
+比较像liunx工具 加了--help 可以查看具体参数
 java -cp dbatools-0.0.1-SNAPSHOT.jar  com.yh.spring.ssm.Controller.Monitor_zabbix --help
 
 ### 查询历史告警
