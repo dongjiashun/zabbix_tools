@@ -49,6 +49,7 @@
 
 	jdk 1.8 或者 1.7
 具体说明 详情看 java -cp dbatools-0.0.1-SNAPSHOT.jar  com.yh.spring.ssm.Controller.Monitor_zabbix --help
+
  		"功能介绍 " ) ;
 		
 		"1.过滤告警级别" ) ;
@@ -76,21 +77,22 @@ maven插件：需要mvn install 打包
 ###辅助命令
 比较像liunx工具 加了--help 可以查看具体参数
 java -cp dbatools-0.0.1-SNAPSHOT.jar  com.yh.spring.ssm.Controller.Monitor_zabbix --help
+![image](https://github.com/dongjiashun/zabbix_tools/blob/master/help.png)
 
 ### 查询历史告警
 
 案例：：数据库告警 在 2019-04-25 16:42:15 之后的告警 告警基本为4：Disaster 当然不知道告警基本的可以设置--l=0
  java -cp dbatools-0.0.1-SNAPSHOT.jar com.yh.spring.ssm.Controller.Monitor_zabbix --i=10 --d=1556181735l --l=4
- 
-### 实时告警
+ ![image](https://github.com/dongjiashun/zabbix_tools/blob/master/send.png)
+### 实时告警send
   
   java -cp xxx.jar  com.yh.spring.ssm.Controller.Monitor_zabbix --i=10 --d=1556181735 --l=0 --time=1 --send=true
- 
+ ![image](https://github.com/dongjiashun/zabbix_tools/blob/master/time.png)
 
 配置目录在 resource下
    mail.properties
    zabbix.properties
-
+ ![image](https://github.com/dongjiashun/zabbix_tools/blob/master/1dir.png)
 
 ### 注意
 使用方法在使用前需要知道 自己监听的用户组
